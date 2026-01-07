@@ -392,6 +392,18 @@
   </div>
 
   <nav class="tabs">
+
+                    <!-- DEBUT DU LIEN HUB (Copier tout ce bloc) -->
+      <style>
+        .mini-hub-icon { width: 28px; height: 28px; border-radius: 50%; margin-right: 12px; border: 2px solid #D9A526; box-shadow: 0 0 10px rgba(217, 165, 38, 0.6); overflow: hidden; flex-shrink: 0; background: white; transition: transform 0.3s ease; }
+        .nav-item:hover .mini-hub-icon { transform: scale(1.2) rotate(10deg); box-shadow: 0 0 15px rgba(217, 165, 38, 0.9); border-color: white; }
+      </style>
+      <a href="https://projettechacademy.github.io/Programme_Formation_Digital_Python/Digital_Business_Card.html" target="_blank" class="nav-item flex items-center px-6 py-3 text-sm font-medium text-gray-300 hover:text-white group">
+        <div class="mini-hub-icon"><img src="https://projettechacademy.github.io/Projet_Python/Asset/Logo_MMPA.jpeg" alt="Hub" class="w-full h-full object-cover"></div>
+        <span class="group-hover:text-[#D9A526] transition-colors font-bold"></span>
+      </a>
+      <!-- FIN DU LIEN HUB -->
+       
     <button class="tab-btn active" onclick="openTab(event, 'tab-kpi')">
       <i data-lucide="book-open" width="16"></i> <span>KPIs</span>
     </button>
@@ -409,6 +421,8 @@
     </button>
   </nav>
 </header>
+
+
 
 <!-- ONGLET 1 : KPIs -->
 <div id="tab-kpi" class="tab-content active">
@@ -432,6 +446,7 @@
 
           <!-- FILTRES INTERACTIFS (ICONES DIGITALES) -->
           <div class="category-filters" id="categoryFilters">
+            
             <button class="cat-btn active" data-cat="all">Tous</button>
             <button class="cat-btn" data-cat="Finance" style="border-color:var(--yellow); color:var(--yellow)"><i data-lucide="coins"></i> Finance</button>
             <button class="cat-btn" data-cat="Marketing" style="border-color:var(--terra); color:var(--terra)"><i data-lucide="megaphone"></i> Market</button>
